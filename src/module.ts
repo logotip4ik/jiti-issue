@@ -12,7 +12,7 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'nuxt-lucia-auth',
     configKey: 'lucia'
   },
-  setup (options, nuxt) {
+  setup(options, nuxt) {
     if (!options.auth) { throw new Error('no lucia auth config was provided') }
 
     console.log('auth:', options.auth)
